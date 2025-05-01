@@ -18,12 +18,11 @@
   --linen: #F8F4EC;
   --dark-charcoal: #2B2B2B;
   --soft-white: #FAF9F6;
-  --heading-font: 'Playfair Display', serif;
 }
 
 /* GLOBAL STYLES (mobile first/small) */
 body {
-  font-family: var(--heading-font);
+  font-family: 'Playfair Display', serif;
   background-color: var(--soft-white);
   color: var(--dark-charcoal);
   padding: 20px;
@@ -43,7 +42,12 @@ header img {
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+}
+
+/*headers white */
+, h2, h3, h4, h5, h6 {
+  color: white;
 }
 
 nav ul {
@@ -65,8 +69,8 @@ section {
   margin-top: 40px;
 }
 
+/* REMOVE PREVIOUS HEADER COLORS */
 h2, h3 {
-  color: var(--olive-green);
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -80,20 +84,40 @@ ul {
   list-style-type: disc;
 }
 
+/* GREEN BOX STYLE FOR OFFERINGS */
+.green-box {
+  background-color: var(--olive-green);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* FIGURE IMAGE + CAPTION STYLING */
 figure {
-  margin: 20px 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
   text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
 }
 
 figure img {
-  max-width: 100%;
+  display: block;
+  width: 100%;
   height: auto;
-  border-radius: 6px;
+  border-bottom: 1px solid #eee;
+  border-radius: 0;
 }
 
 figcaption {
+  padding: 12px;
   font-style: italic;
-  margin-top: 5px;
+  color: var(--dark-charcoal);
+  font-size: 0.95rem;
+  background-color: white;
 }
 
 footer {
@@ -113,61 +137,4 @@ address {
   margin-bottom: 10px;
 }
 
-/* MEDIA QUERY (medium) */
-@media (min-width: 600px) {
-  nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  nav li {
-    margin: 0;
-  }
-
-  section {
-    padding: 0 30px;
-  }
-
-  figure {
-    max-width: 90%;
-    margin: 20px auto;
-  }
-}
-
-/* MEDIA QUERY (large) */
-@media (min-width: 900px) {
-  body {
-    padding: 40px;
-  }
-
-  section {
-    padding: 0 60px;
-  }
-
-  #gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-
-  figure {
-    margin: 0;
-  }
-}
-
-/* MEDIA QUERY (xl) */
-@media (min-width: 1200px) {
-  header,
-  footer {
-    padding: 40px;
-  }
-
-  #gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  figure img {
-    max-width: 100%;
-  }
-}
+/* MEDIA QUERY*
