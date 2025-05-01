@@ -1,0 +1,116 @@
+/* CSS BY Natty Daniel */
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT VARIABLES */
+:root {
+  --midnight-blue: #1F2A44;
+  --olive-green: #76885B;
+  --champagne-gold: #E5C185;
+  --linen: #F8F4EC;
+  --dark-charcoal: #2B2B2B;
+  --soft-white: #FAF9F6;
+  --heading-font: 'Playfair Display', serif;
+}
+
+
+/* GLOBAL STYLES (mobile first/small) */
+body {
+    font-family: var(--heading-font);
+    background-color: var(--soft-white);
+    color: var(--dark-charcoal);
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  header {
+    text-align: center;
+    background-color: var(--midnight-blue);
+    color: var(--soft-white);
+    padding: 20px;
+  }
+  
+  header img {
+    max-width: 120px;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 10px 0;
+  }
+  
+  nav li {
+    margin: 5px 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--champagne-gold);
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2, h3 {
+    color: var(--olive-green);
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  section {
+    margin-top: 30px;
+  }
+  
+  article {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    margin-left: 20px;
+    list-style-type: disc;
+  }
+  
+  figure {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  figcaption {
+    font-style: italic;
+    margin-top: 5px;
+  }
+  
+  footer {
+    margin-top: 40px;
+    background-color: var(--midnight-blue);
+    color: var(--soft-white);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer a {
+    color: var(--champagne-gold);
+    text-decoration: none;
+  }
+  
+  address {
+    margin-bottom: 10px;
+  }
+  
