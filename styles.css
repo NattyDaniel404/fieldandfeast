@@ -46,7 +46,7 @@ h1 {
 }
 
 /*headers white */
-h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
   color: white;
 }
 
@@ -64,7 +64,33 @@ nav a {
   color: var(--champagne-gold);
   font-weight: bold;
 }
-
+nav {
+    background-color: var(--champagne-gold);
+    padding: 10px 0;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav a {
+    color: var(--midnight-blue);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
 section {
   margin-top: 40px;
 }
@@ -92,6 +118,25 @@ ul {
   border-radius: 8px;
   margin-bottom: 20px;
 }
+.green-link-box {
+    background-color: var(--olive-green);
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .green-link-box a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .green-link-box a:hover {
+    text-decoration: underline;
+  }
+  
 
 /* FIGURE IMAGE + CAPTION STYLING */
 figure {
